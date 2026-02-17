@@ -581,7 +581,8 @@ h1 a{
     z-index: 10;
     color: rgba(255, 255, 255, 0.9);
     overflow-y: auto;
-    scrollbar-width: none;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 140, 0, 0.4) transparent;
 }
 
 .title {
@@ -621,10 +622,14 @@ h1 a{
     cursor: pointer;
 }
 
+.grey-circle:hover .left-arrow, .grey-circle:hover .right-arrow {
+    background-color: #ff8c00;
+}
+
 .left-arrow, .right-arrow {
     width: 40%;
     height: 50%;
-    background-color: #ff8c00;
+    background-color: rgba(255, 140, 0, 0.4);
 }
 
 .left-arrow {
