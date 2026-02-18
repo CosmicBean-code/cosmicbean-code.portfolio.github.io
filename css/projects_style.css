@@ -1,0 +1,131 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Dark background */
+    color: #fff; /* White text */
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #111; /* Slightly lighter dark */
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+}
+header a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Projects Section */
+.projects-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #111; /* Card background */
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1); /* Subtle glow */
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: #ccc;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    .projects-section h2 {
+        font-size: 2em;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr; /* Stack on mobile */
+    }
+}

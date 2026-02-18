@@ -679,3 +679,29 @@ h1 a{
     width: 70%;
     margin-left: 10%;
 }
+#projects{
+    color: #FF8800;
+    border-left: 0.2rem solid #FF8800;
+    transition: all 300ms ease;
+}
+
+#projects:hover{
+    color: #fff;
+    border-left: 0.2rem solid #fff;
+    filter: drop-shadow(10px 0 10px rgba(255, 136, 0, 1))
+            drop-shadow(-10px 0 10px rgba(255, 136, 0, 1));
+    animation: twinkle-orange 1s infinite;
+}
+
+@keyframes twinkle-orange {
+    0% { filter: drop-shadow(10px 0 10px rgba(255, 136, 0, 1))
+            drop-shadow(-10px 0 10px rgba(255, 136, 0, 1)); }
+    25% { filter: drop-shadow(10px 0 10px rgba(255, 136, 0, 0.75))
+            drop-shadow(-10px 0 10px rgba(255, 136, 0, 0.75)); }
+    50% { filter: drop-shadow(10px 0 10px rgba(255, 136, 0, 0.5))
+            drop-shadow(-10px 0 10px rgba(255, 136, 0, 0.5)); }
+    75% { filter: drop-shadow(10px -2px -2px rgba(255, 136, 0, .8)) drop-shadow(-10px -2px -2px rgba(255, 136, .8)); }
+    to { filter: drop-shadow(10px -4px -4px rgba(255, .8)) drop-shadow(-10px -4px -4px rgba(255,.8)); }
+}
+
+
